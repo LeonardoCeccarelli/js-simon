@@ -3,3 +3,101 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: rgb(14, 25, 75);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+}
+
+.result_container {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    padding: 50px;
+    border: 3px solid rgb(255, 115, 0);
+    border-radius: 15px;
+    background-color: rgb(45, 156, 145);
+    text-align: center;
+}
+
+.result h3 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.result hr {
+    border-color: rgb(255, 115, 0);
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+.result h3:nth-child(1),
+.result h3:nth-child(1) + p{
+    color: green;
+}
+
+.result h3:nth-child(4), 
+.result h3:nth-child(4) + p{
+    color: red;
+}
+
+.num_result {
+    margin-left: 10px;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: black;
+}
+
+.num_result.num_right {
+    background-color: green;
+}
+
+.num_result.num_wrong {
+    background-color: red;
+}
+
+.btn_container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn_submit {
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid rgb(14, 25, 75);
+    background-color: rgb(255, 115, 0);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 5px rgb(14, 25, 75);
+    transition: all .3s;
+}
+
+.btn_submit:hover {
+    box-shadow: 0 0 20px rgb(14, 25, 75);
+    color: rgb(255, 115, 0);
+    background-color: rgb(14, 25, 75);
+}
