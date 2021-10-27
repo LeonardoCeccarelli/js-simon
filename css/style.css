@@ -55,6 +55,7 @@ h1 {
 
 .result h3:nth-child(4) {
     color: red;
+    margin-bottom: 25px;
 }
 
 .num_result {
